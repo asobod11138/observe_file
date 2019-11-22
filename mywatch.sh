@@ -17,8 +17,6 @@ do
   current=`update $filename`
   if [ "$last" != "$current" ];
   then
-    nowdate=`date '+%Y/%m/%d'`
-    nowtime=`date '+%H:%M:%S'`
     for((i=0;i<100;i++));
     do
       eval $command
